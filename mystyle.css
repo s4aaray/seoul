@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Utama */
+header {
+    background-color: rgb(68, 0, 255); /* Warna biru pilihanmu */
+    color: white;
+    padding: 30px 20px 0 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Navigasi di Dalam Header */
+nav {
+    background-color: rgb(24, 0, 88); /* Warna ungu pilihanmu */
+    margin: 0 -20px; /* Bikin nav full lebar layar */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 15px 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+nav a:hover{
+    color: #a380ff;
+}
+
+nav a:hover::after {
+    content: "☘️";
+}
+
+/* --- TATA LETAK UTAMA (MAIN & ASIDE) --- */
+
+main {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Kolom Kiri: #content */
+#content {
+    flex: 3; /* Mengambil porsi 75% */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#content article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+#content h2 {
+    color: rgb(68, 0, 255);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#content img {
+    width: 100%; /* Mengatur gambar artikel agar responsif */
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+
+#content p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* Bagian Sub-wisata (section) */
+#content section {
+    margin-top: 20px;
+}
+
+#content section h3 {
+    color: rgb(24, 0, 88);
+    margin-bottom: 8px;
+}
+
+/* Kolom Kanan: Aside (Profil Kota) */
+aside {
+    flex: 1; /* Mengambil porsi 25% */
+}
+
+aside article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+aside header {
+    background-color: transparent;
+    color: #333;
+    padding: 0;
+}
+
+aside header h2 {
+    color: rgb(68, 0, 255);
+    font-size: 1.4rem;
+}
+
+aside header p {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+aside figure img {
+    width: 120px;
+    height: auto;
+}
+
+aside figcaption {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Tabel Informasi di Aside */
+aside section h3 {
+    color: rgb(68, 0, 255);
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+aside table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+aside th {
+    padding: 6px 0;
+    color: #333;
+    width: 45%;
+}
+
+aside td {
+    padding: 6px 0;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(24, 0, 88);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
